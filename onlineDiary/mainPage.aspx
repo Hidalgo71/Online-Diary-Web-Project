@@ -11,8 +11,6 @@
     <div id="divheader">
         <img src="photos/sitelogosu.png" width="75" height="75" />
 
-        <!--<img src="C:/Users/Yekta/Desktop/webproje/İÇERİK/sitelogosu.png" width="75" height="75">
-        <img src="App_Data/sitelogosu.png" />-->
     </div>
 </header>
 <body>
