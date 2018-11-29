@@ -1,0 +1,11 @@
+CREATE DATABASE onlineDiaryDB
+USE onlineDiaryDB 
+CREATE TABLE userTBL
+(
+	userID int IDENTITY (1,1) PRIMARY KEY,
+	nickname nvarchar(50) NOT NULL,
+	pass nvarchar(8) NOT NULL,
+	userName nvarchar(50) NOT NULL,
+	surname nvarchar(50) NOT NULL,
+	email nvarchar(50) NOT NULL 
+);
