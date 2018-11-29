@@ -1,5 +1,5 @@
-CREATE DATABASE onlineDiaryDBtest
-
+CREATE DATABASE onlineDiaryDB
+USE onlineDiaryDB 
 CREATE TABLE userTBL
 (
 	userID int IDENTITY (1,1) PRIMARY KEY,
