@@ -51,7 +51,7 @@
 
                         <br />
                         <br />
-                        <asp:Button ID="signBTN" runat="server" Text="SIGN UP" Width="270px" Height="40px" BackColor="yellowgreen" font-family="sans-serif" Font-Size="large" color="beige" font-weight="800" BorderColor="Navy" />
+                        <asp:Button ID="signBTN" runat="server" Text="SIGN UP" Width="270px" Height="40px" BackColor="yellowgreen" font-family="sans-serif" Font-Size="large" color="beige" font-weight="800" BorderColor="Navy" OnClick="signBTN_Click" />
                     </div>
                 </div>
     </form>
