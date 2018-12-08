@@ -17,18 +17,6 @@ namespace onlineDiary
             //"+ nicknameTB + "
         }
 
-        protected void changeMailBTN_Click(object sender, EventArgs e)
-        {
-          //  SqlConnection conn = new SqlConnection("Data Source=DESKTOP-COFM7UV; Initial Catalog = onlineDiaryDB; Integrated Security=True");
-          //  conn.Open();
-          //  SqlCommand command = new SqlCommand();
-          //  command.Connection = conn;
-
-          ////  command.CommandText = "UPDATE Student SET Address = @add, City = @cit Where FirstName = @fn and LastName = @add";
-          //  SqlCommand cmd = new SqlCommand("UPDATE userTBL SET email = '" + changeMailTB.Text + "' WHERE nickname = '" +nicknameTB.Text + "'; ", conn);
-          //  cmd.ExecuteNonQuery();
-        }
-
         protected void changeMailBTN_Click1(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection("Data Source=DESKTOP-COFM7UV; Initial Catalog = onlineDiaryDB; Integrated Security=True");
