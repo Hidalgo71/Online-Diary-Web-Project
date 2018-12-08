@@ -40,9 +40,12 @@
                 <tr>
                     <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
                     <td rowspan="2">
+                        <asp:Label ID="Label2" runat="server" Text="Nickname:"></asp:Label>
+                        <asp:TextBox style="margin-left:46px" ID="nicknameTB" runat="server" Width="200px"></asp:TextBox>
+                        <br />
                         <asp:Label ID="Label1" runat="server" Text="New Password"></asp:Label>
                         &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:TextBox ID="TextBox1" runat="server" Width="200px" style="text-align: center"></asp:TextBox>
+                        <asp:TextBox ID="passwordTB" runat="server" Width="200px" style="text-align: center"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
