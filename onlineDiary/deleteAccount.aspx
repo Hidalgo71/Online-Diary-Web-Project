@@ -1,32 +1,27 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="changeMail.aspx.cs" Inherits="onlineDiary.changeMail" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="deleteAccount.aspx.cs" Inherits="onlineDiary.deleteAccount" %>
 
 <!DOCTYPE html>
-<style type="text/css">
-    .auto-style1 {
-        color: #003366;
-    }
-</style>
-<header align="center">
-    <div id="divheader">
-        <img src="photos/sitelogosu.png" width="75" height="75" />
-
-
-    </div>
-</header>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" type="text/css" href="StyleSheet1.css" />
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            color: #003366;
+        }
+    </style>
 </head>
+    <header align="center">
+    <div id="divheader">
+        <img src="photos/sitelogosu.png" width="75" height="75" />
+
+    </div>
+</header>
 <body>
     <form id="form1" runat="server">
-        <div style="line-height: 8px; padding-left: 43px; padding-top: 40px">
-
-
-
-
-
+        <div>
+             <div style="line-height: 8px; padding-left: 43px; padding-top: 40px">
             <br />
             <br />
             <br />
@@ -37,46 +32,36 @@
             <table>
                 <tr>
                     <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /> </th>
-                    <th style="color:red; padding:10px">
-                        <span class="auto-style1">
-                        <strong>CHANGE MAIL ADRESS</strong></span>
-
-                    </th>
+                    <th class="auto-style1">DELETE USER ACCOUNT</th>
                 </tr>
                 
                 
                 <tr>
                     <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
-                    <td rowspan="2">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="200px" style="text-align: center"></asp:TextBox>
-                    </td>
+                    <td rowspan="2">Do you really want to delete your account ?</td>
                 </tr>
                 <tr>
                     <th><asp:Button ID="deleteBTN" runat="server" Text="Delete Account         >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
                 </tr>
                 <tr>
-                    <td rowspan="2">
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Text="Enter Your Nickname"></asp:Label>
+                        <td>
 
-                    </td>
-                    <td style="padding-left:120px">
+                            <asp:TextBox ID="deleteTB" runat="server" style="text-align: right"></asp:TextBox>
 
-                        <asp:Button ID="changeMailBTN" runat="server" style="text-align: right;color:ghostwhite; font-weight: 700; background-color: #003366;" Text="SEND MAIL" />
-
+                        </td>
                     </td>
                 </tr>
 
             </table>
-
-
-
             <br />
-&nbsp;<br />
             <br />
-
-
+            <asp:Button ID="DeleteAccBTN" runat="server" Text="Delete My Account" style="margin-left:260px; background-color:red; font-family:sans-serif" OnClick="DeleteAccBTN_Click"/>
+        </div>
         </div>
     </form>
-    <div id="footer">
+        <div id="footer">
 
         <a href="http://www.google.com">
             <img src="photos/googlelogo.png" width="40" height="40" margin="10" /></a>

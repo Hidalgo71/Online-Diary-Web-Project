@@ -10,7 +10,7 @@
 namespace onlineDiary {
     
     
-    public partial class changeMail {
+    public partial class deleteAccount {
         
         /// <summary>
         /// form1 control.
@@ -40,15 +40,6 @@ namespace onlineDiary {
         protected global::System.Web.UI.WebControls.Button passBTN;
         
         /// <summary>
-        /// TextBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
         /// deleteBTN control.
         /// </summary>
         /// <remarks>
@@ -58,12 +49,30 @@ namespace onlineDiary {
         protected global::System.Web.UI.WebControls.Button deleteBTN;
         
         /// <summary>
-        /// changeMailBTN control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button changeMailBTN;
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
+        /// deleteTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox deleteTB;
+        
+        /// <summary>
+        /// DeleteAccBTN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button DeleteAccBTN;
     }
 }

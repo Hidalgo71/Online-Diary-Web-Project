@@ -68,9 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="changeMail.aspx" />
+    <Content Include="changePassword.aspx" />
+    <Content Include="deleteAccount.aspx" />
     <Content Include="forgotPass.aspx" />
     <Content Include="login.aspx" />
     <Content Include="mainPage.aspx" />
+    <Content Include="myDiaries.aspx" />
     <Content Include="photos\box1.png" />
     <Content Include="photos\box2.png" />
     <Content Include="photos\box3.png" />
@@ -84,6 +87,7 @@
     <Content Include="StyleSheet1.css" />
     <Content Include="template.aspx" />
     <Content Include="Web.config" />
+    <Content Include="writeDiary.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="changeMail.aspx.cs">
@@ -92,6 +96,20 @@
     </Compile>
     <Compile Include="changeMail.aspx.designer.cs">
       <DependentUpon>changeMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="changePassword.aspx.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="changePassword.aspx.designer.cs">
+      <DependentUpon>changePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deleteAccount.aspx.cs">
+      <DependentUpon>deleteAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deleteAccount.aspx.designer.cs">
+      <DependentUpon>deleteAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="forgotPass.aspx.cs">
       <DependentUpon>forgotPass.aspx</DependentUpon>
@@ -102,7 +120,6 @@
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -113,6 +130,13 @@
     </Compile>
     <Compile Include="mainPage.aspx.designer.cs">
       <DependentUpon>mainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myDiaries.aspx.cs">
+      <DependentUpon>myDiaries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myDiaries.aspx.designer.cs">
+      <DependentUpon>myDiaries.aspx</DependentUpon>
     </Compile>
     <Compile Include="privacy.aspx.cs">
       <DependentUpon>privacy.aspx</DependentUpon>
@@ -135,6 +159,13 @@
     </Compile>
     <Compile Include="template.aspx.designer.cs">
       <DependentUpon>template.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="writeDiary.aspx.cs">
+      <DependentUpon>writeDiary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="writeDiary.aspx.designer.cs">
+      <DependentUpon>writeDiary.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

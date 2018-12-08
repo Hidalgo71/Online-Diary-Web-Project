@@ -10,11 +10,24 @@ using System.Data.SqlClient;
 
 namespace onlineDiary
 {
+    public class globalVar
+    {
+        public globalVar()
+        {
+           //string globalNickname = idTB.text;
+           
+        }
+    }
+    
     public partial class login : System.Web.UI.Page
     {
+        
+        //string holdNickName = idTB.Text;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            //string holdNickname = idTB.Text;
+            //string holdPassword = passTB.Text;
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -37,8 +50,13 @@ namespace onlineDiary
             {
                 Response.Redirect("login.aspx");
             }
-            
 
+            //hashtable hTBGlobalValues = null;
+            if (Application["globalValueKey"] != null)
+            {
+
+            }
         }
+       
     }
 }

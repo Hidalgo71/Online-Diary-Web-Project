@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="changeMail.aspx.cs" Inherits="onlineDiary.changeMail" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="changePassword.aspx.cs" Inherits="onlineDiary.changePassword" %>
 
 <!DOCTYPE html>
-<style type="text/css">
-    .auto-style1 {
-        color: #003366;
-    }
-</style>
 <header align="center">
     <div id="divheader">
         <img src="photos/sitelogosu.png" width="75" height="75" />
@@ -38,16 +33,15 @@
                 <tr>
                     <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /> </th>
                     <th style="color:red; padding:10px">
-                        <span class="auto-style1">
-                        <strong>CHANGE MAIL ADRESS</strong></span>
-
-                    </th>
+                        <strong style="color: #003366">CHANGE PASSWORD</strong></th>
                 </tr>
                 
                 
                 <tr>
                     <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
                     <td rowspan="2">
+                        <asp:Label ID="Label1" runat="server" Text="New Password"></asp:Label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:TextBox ID="TextBox1" runat="server" Width="200px" style="text-align: center"></asp:TextBox>
                     </td>
                 </tr>
@@ -60,7 +54,7 @@
                     </td>
                     <td style="padding-left:120px">
 
-                        <asp:Button ID="changeMailBTN" runat="server" style="text-align: right;color:ghostwhite; font-weight: 700; background-color: #003366;" Text="SEND MAIL" />
+                        <asp:Button ID="changeMailBTN" runat="server" style="text-align: right;color:ghostwhite; background-color: #003366; font-weight: 700;" Text="CONFIRM" OnClick="changeMailBTN_Click" />
 
                     </td>
                 </tr>

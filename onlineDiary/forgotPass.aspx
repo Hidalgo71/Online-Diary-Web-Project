@@ -22,12 +22,12 @@
             <br />
             <asp:Label ID="Label1" runat="server" Text="E-Mail"></asp:Label>
             &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server" Width="169px"></asp:TextBox>
+            <asp:TextBox ID="mailTB" runat="server" Width="169px"></asp:TextBox>
             <br />
             <br />
             <br />
             <br />
-            <asp:Button ID="sendMailTB" runat="server" Text="SEND" />
+            <asp:Button ID="sendMailTB" runat="server" Text="SEND" OnClick="sendMailTB_Click" style="color: #FFFFFF; font-weight: 700; text-align: center; background-color: #003366" Width="102px" />
             
 
             </div>

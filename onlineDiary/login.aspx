@@ -10,7 +10,6 @@
     <header align="center">
     <div id="divheader">
         <img src="photos/sitelogosu.png" width="75" height="75" />
-
     </div>
 </header>
 <body>

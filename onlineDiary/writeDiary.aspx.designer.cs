@@ -10,7 +10,7 @@
 namespace onlineDiary {
     
     
-    public partial class forgotPass {
+    public partial class writeDiary {
         
         /// <summary>
         /// form1 control.
@@ -22,30 +22,21 @@ namespace onlineDiary {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label1 control.
+        /// closeBTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Button closeBTN;
         
         /// <summary>
-        /// mailTB control.
+        /// saveBTN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox mailTB;
-        
-        /// <summary>
-        /// sendMailTB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button sendMailTB;
+        protected global::System.Web.UI.WebControls.Button saveBTN;
     }
 }
