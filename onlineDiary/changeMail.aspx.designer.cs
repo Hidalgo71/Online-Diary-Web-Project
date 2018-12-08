@@ -40,13 +40,22 @@ namespace onlineDiary {
         protected global::System.Web.UI.WebControls.Button passBTN;
         
         /// <summary>
-        /// TextBox1 control.
+        /// nicknameTB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox nicknameTB;
+        
+        /// <summary>
+        /// changeMailTB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox changeMailTB;
         
         /// <summary>
         /// deleteBTN control.

@@ -48,7 +48,9 @@
                 <tr>
                     <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
                     <td rowspan="2">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="200px" style="text-align: center"></asp:TextBox>
+                        <asp:TextBox ID="nicknameTB" runat="server" Width="200px"></asp:TextBox>
+                        <br />
+                        <asp:TextBox ID="changeMailTB" runat="server" Width="200px" style="text-align: center"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +62,7 @@
                     </td>
                     <td style="padding-left:120px">
 
-                        <asp:Button ID="changeMailBTN" runat="server" style="text-align: right;color:ghostwhite; font-weight: 700; background-color: #003366;" Text="SEND MAIL" />
+                        <asp:Button ID="changeMailBTN" runat="server" style="text-align: right;color:ghostwhite; font-weight: 700; background-color: #003366;" Text="SEND MAIL" OnClick="changeMailBTN_Click1" />
 
                     </td>
                 </tr>
