@@ -9,3 +9,11 @@ CREATE TABLE userTBL
 	surname nvarchar(50) NOT NULL,
 	email nvarchar(50) NOT NULL 
 );
+
+--USE onlineDiaryDB
+CREATE TABLE diariesTBL
+(
+	diaryID int IDENTITY (1,1) PRIMARY KEY,
+	diaries nvarchar(255) NOT NULL,
+	title nvarchar(25) NOT NULL
+);
