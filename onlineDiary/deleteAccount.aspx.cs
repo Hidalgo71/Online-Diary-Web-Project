@@ -27,6 +27,8 @@ namespace onlineDiary
             SqlCommand cmd = new SqlCommand("DELETE FROM userTBL WHERE nickname='"+ deleteTB.Text+"'", conn);
 
             cmd.ExecuteNonQuery();
+            
+            deleteTB.Text = string.Empty;
         }
     }
 }
