@@ -23,7 +23,6 @@ namespace onlineDiary
             conn.Open();
             SqlCommand command = new SqlCommand();
             command.Connection = conn;
-            //SqlCommand cmd = new SqlCommand("INSERT INTO userTBL(nickname,pass,username,surname,email) VALUES(@nickname,@pass,@userName,@surname,@email)", conn);
             SqlCommand cmd = new SqlCommand("INSERT INTO diariesTBL(diaries, title) VALUES(@diaries,@title)",conn);
             cmd.Parameters.AddWithValue("@diaries", writeDiaryTB.Text);
             cmd.Parameters.AddWithValue("@title", titleTB.Text);
