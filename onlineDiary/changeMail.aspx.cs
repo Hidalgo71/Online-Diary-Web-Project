@@ -14,7 +14,7 @@ namespace onlineDiary
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //"+ nicknameTB + "
+            
         }
 
         protected void changeMailBTN_Click1(object sender, EventArgs e)
@@ -24,9 +24,12 @@ namespace onlineDiary
             SqlCommand command = new SqlCommand();
             command.Connection = conn;
 
-            //  command.CommandText = "UPDATE Student SET Address = @add, City = @cit Where FirstName = @fn and LastName = @add";
             SqlCommand cmd = new SqlCommand("UPDATE userTBL SET email = '" + changeMailTB.Text + "' WHERE nickname = '" + nicknameTB.Text + "'; ", conn);
             cmd.ExecuteNonQuery();
+            
+            
+            changeMailTTB.Text = string.Empty;
+            nicknameTB.Text = string.Empty;
 
         }
     }
