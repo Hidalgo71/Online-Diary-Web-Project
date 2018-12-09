@@ -30,7 +30,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-                   <asp:Button ID="settingsBTN" runat="server" Text="Settings" style="float:right; font-weight: 700; color: #FFFFFF; background-color: #1c1a19;" Height="32px" Width="135px"/>
+                   <asp:Button ID="settingsBTN" runat="server" Text="Settings" style="float:right; font-weight: 700; color: #FFFFFF; background-color: #1c1a19;" Height="32px" Width="135px" OnClick="settingsBTN_Click"/>
         <h2 style="padding-left:550px;padding-top:30px">
         <asp:Label ID="Label1" runat="server" Text="NOTE LIST" style="color: #FF0006; "></asp:Label>
         </h2>

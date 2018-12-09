@@ -27,7 +27,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-                   <asp:Button ID="settingsBTN" runat="server" Text="Settings" style="float:right; font-weight: 700; color: #FFFFFF; background-color: #1c1a19;" Height="32px" Width="135px"/>
+                   <asp:Button ID="settingsBTN" runat="server" Text="Settings" style="float:right; font-weight: 700; color: #FFFFFF; background-color: #1c1a19;" Height="32px" Width="135px" OnClick="settingsBTN_Click"/>
         <div style="line-height:8px; padding-left:43px; padding-top:40px">
             
 

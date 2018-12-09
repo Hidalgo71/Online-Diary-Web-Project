@@ -43,5 +43,10 @@ namespace onlineDiary
         {
 
         }
+
+        protected void settingsBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("changeMail.aspx");
+        }
     }
 }
