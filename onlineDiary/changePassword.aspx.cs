@@ -27,7 +27,7 @@ namespace onlineDiary
 
             cmd.ExecuteNonQuery();
             
-            passwordTB.Text = strişng.Empty;
+            passwordTB.Text = string.Empty;
             nicknameTB.Text = string.Empty;
         }
     }

@@ -28,7 +28,7 @@ namespace onlineDiary
             cmd.ExecuteNonQuery();
             
             
-            changeMailTTB.Text = string.Empty;
+            changeMailTB.Text = string.Empty;
             nicknameTB.Text = string.Empty;
 
         }

@@ -21,19 +21,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="line-height: 8px; padding-left: 43px; padding-top: 40px">
-
-
-
-
-
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+        <div style="/*line-height: 8px;*/ padding-left: 90px; padding-top: 80px; line-height:40px">
             <table>
                 <tr>
                     <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /> </th>
