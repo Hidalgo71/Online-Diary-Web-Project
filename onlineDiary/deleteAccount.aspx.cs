@@ -23,12 +23,12 @@ namespace onlineDiary
             conn.Open();
             SqlCommand command = new SqlCommand();
             command.Connection = conn;
-            //string qry = "select * from userTBL where nickname='" + id + "' and pass='" + pass + "'";
             SqlCommand cmd = new SqlCommand("DELETE FROM userTBL WHERE nickname='"+ deleteTB.Text+"'", conn);
 
             cmd.ExecuteNonQuery();
             
             deleteTB.Text = string.Empty;
+            Response.Redirect("mainPage.aspx");
         }
     }
 }

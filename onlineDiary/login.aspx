@@ -19,7 +19,7 @@
             <p style="font-size:35px;font-weight:bold;font-family:'Times New Roman', Times, serif">LOGIN</p>
             <br />
             <asp:Label ID="idLBL" runat="server" Text="Username"></asp:Label>
-            <%--&nbsp;&nbsp;&nbsp;--%>
+            &nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="idTB" runat="server" OnTextChanged="idTB_TextChanged"></asp:TextBox>
             <br />
             <br />

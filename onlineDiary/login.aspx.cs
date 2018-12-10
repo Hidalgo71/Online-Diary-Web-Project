@@ -10,13 +10,6 @@ using System.Data.SqlClient;
 
 namespace onlineDiary
 {
-    public class globalVar
-    {
-        public globalVar()
-        {
-                      
-        }
-    }
     
     public partial class login : System.Web.UI.Page
     {

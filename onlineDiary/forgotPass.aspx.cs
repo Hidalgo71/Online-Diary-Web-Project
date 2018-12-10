@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
+using System.Net;
+
 
 namespace onlineDiary
 {
@@ -17,26 +19,31 @@ namespace onlineDiary
 
         protected void sendMailTB_Click(object sender, EventArgs e)
         {
-            //System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
-            //mail.To.Add(mailTB.Text);
+            MailMessage message = new MailMessage();
+            message.IsBodyHtml = true;
+            message.From = new MailAddress("y.ozdemir71@gmail.com");
+            message.To.Add(new MailAddress(mailTB.Text));
+            message.CC.Add(new MailAddress("y.ozdemir71@gmail.com"));
+            message.Subject = "Forgot Mail!";
+            message.Body = "DAILY DIARY";
+            SmtpClient client = new SmtpClient();
+            client.Send(message);
 
+            //SmtpClient smtpC = new SmtpClient("smtp.gmail.com", 25);
+            //smtpC.EnableSsl = true;
+            //smtpC.UseDefaultCredentials = false;
+            //smtpC.Credentials = new NetworkCredential("y.ozdemir71@gmail.com", "cikolata71LOCKE.");
+            //MailMessage mail = new MailMessage("y.ozdemir71@gmail.com", mailTB.Text, "Re Mail", "MAIL");
+            //smtpC.Send(mail);
 
-            // MailMessage mail = new MailMessage(sendMailTB.Text,"New Pass");
-            //SmtpClient smtpserver = new SmtpClient("127.0.0.1");
-            SmtpClient smtpClient = new SmtpClient("mail.MyWebsiteDomainName.com", 25);
-
-            smtpClient.Credentials = new System.Net.NetworkCredential("y.ozdemir71@gmail.com", "locke");
-            smtpClient.UseDefaultCredentials = true;
-            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtpClient.EnableSsl = true;
-            MailMessage mail = new MailMessage();
-
-            mail.From = new MailAddress("y.ozdemir71@gmail.com", "Myweb Site");
-            mail.To.Add(new MailAddress("yektaaa39@gmail.com"));
-            mail.CC.Add(new MailAddress("y.ozdemir71@gmail.com"));
-
-            smtpClient.Send(mail);
-
+            //using (var client = new SmtpClient("smtp.gmail.com", 587)
+            //{
+            //    Credentials = new NetworkCredential("yourmail@gmail.com", "yourpassword"),
+            //    EnableSsl = true
+            //})
+            //{
+            //    client.Send("frommail@gmail.com", "tomail@gmail.com", "subject", message);
+            //}
         }
     }
 }
