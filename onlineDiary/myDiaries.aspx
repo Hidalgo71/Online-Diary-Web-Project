@@ -46,7 +46,7 @@
         <div>
 
             <br />
-            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="singleDiaryLB" runat="server" Text="Label"></asp:Label>
             <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="SqlDataSource1" GridLines="Vertical" RepeatColumns="1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" RepeatDirection="Horizontal">
                 <AlternatingItemStyle BackColor="#DCDCDC" />
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
