@@ -43,11 +43,13 @@ namespace onlineDiary
             }
             else
             {
-                //Label7.Text = ("Passwords are not matching or Privacy Policy Not Accepted.");
-                Response.Redirect("signUp.aspx");
-                //Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "WARNING",< script > alert('Passwords are not matching or Privacy Policy Not Accepted.');</Script>");
-                //Response.Write("<script>alert()");                
+                Response.Redirect("signUp.aspx");                
             }
+
+        }
+
+        protected void passCheckTB_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

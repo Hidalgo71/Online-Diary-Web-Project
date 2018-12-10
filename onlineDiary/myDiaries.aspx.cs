@@ -14,7 +14,6 @@ namespace onlineDiary
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //singleDiaryTB.Visible = false;
             singleDiaryLB.Visible = false;
         }
 

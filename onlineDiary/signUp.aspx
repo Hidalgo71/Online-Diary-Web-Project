@@ -30,12 +30,12 @@
             <br />
             <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
-            <asp:TextBox ID="passTB" runat="server" TextMode="Password" Width="200.5px"></asp:TextBox>
+            <asp:TextBox ID="passTB" runat="server" TextMode="Password" Width="200.5px" MaxLength="8"></asp:TextBox>
                 <br />
                 <br />
                 <asp:Label ID="Label6" runat="server" Text="Password Again"></asp:Label>
                 &nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="passCheckTB" runat="server" TextMode="Password" Width="200px"></asp:TextBox>
+                <asp:TextBox ID="passCheckTB" runat="server" TextMode="Password" Width="200px" MaxLength="8" OnTextChanged="passCheckTB_TextChanged"></asp:TextBox>
                 <br />
             <br />
             <asp:Label ID="Label3" runat="server" Text="Name"></asp:Label>
@@ -59,7 +59,7 @@
             
             
                 <br />
-                <asp:Button ID="kayitBTN" runat="server" Text="SING UP" OnClick="kayitBTN_Click" />
+                <asp:Button ID="kayitBTN" runat="server" Text="SING UP" OnClick="kayitBTN_Click" style="color: #FFFFFF; font-weight: 700; background-color: #000099" Width="101px" />
             
             
                 <br />

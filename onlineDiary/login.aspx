@@ -20,7 +20,7 @@
             <br />
             <asp:Label ID="idLBL" runat="server" Text="Username"></asp:Label>
             <%--&nbsp;&nbsp;&nbsp;--%>
-            <asp:TextBox ID="idTB" runat="server"></asp:TextBox>
+            <asp:TextBox ID="idTB" runat="server" OnTextChanged="idTB_TextChanged"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="passLBL" runat="server" Text="Password"></asp:Label>
