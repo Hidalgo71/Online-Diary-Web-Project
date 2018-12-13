@@ -33,7 +33,7 @@ namespace onlineDiary
 
             if (sdr.Read())
             {
-                Response.Redirect("https://www.google.com/");
+                Response.Redirect("myDiaries.aspx");
             }
             else
             {

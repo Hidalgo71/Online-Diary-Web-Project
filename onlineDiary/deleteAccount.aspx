@@ -31,13 +31,13 @@
             <br />
             <table>
                 <tr>
-                    <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /> </th>
+                    <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" OnClick="mailChangeBTN_Click" /> </th>
                     <th class="auto-style1">DELETE USER ACCOUNT</th>
                 </tr>
                 
                 
                 <tr>
-                    <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
+                    <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" OnClick="passBTN_Click" /></th>
                     <td rowspan="2">Do you really want to delete your account ?</td>
                 </tr>
                 <tr>

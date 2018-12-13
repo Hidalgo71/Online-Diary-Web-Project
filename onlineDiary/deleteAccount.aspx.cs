@@ -30,5 +30,15 @@ namespace onlineDiary
             deleteTB.Text = string.Empty;
             Response.Redirect("mainPage.aspx");
         }
+
+        protected void mailChangeBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("changeMail.aspx");
+        }
+
+        protected void passBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("changePassword.aspx");
+        }
     }
 }

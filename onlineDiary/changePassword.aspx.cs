@@ -26,9 +26,19 @@ namespace onlineDiary
             SqlCommand cmd = new SqlCommand("UPDATE userTBL SET pass = '" + passwordTB.Text + "' WHERE nickname = '" + nicknameTB.Text + "'; ", conn);
 
             cmd.ExecuteNonQuery();
-            
+
             passwordTB.Text = string.Empty;
             nicknameTB.Text = string.Empty;
+        }
+
+        protected void mailChangeBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("changeMail.aspx");
+        }
+
+        protected void deleteBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("deleteAccount.aspx");
         }
     }
 }

@@ -32,5 +32,15 @@ namespace onlineDiary
             nicknameTB.Text = string.Empty;
 
         }
+
+        protected void passBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("changePassword.aspx");
+        }
+
+        protected void deleteBTN_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("deleteAccount.aspx");
+        }
     }
 }

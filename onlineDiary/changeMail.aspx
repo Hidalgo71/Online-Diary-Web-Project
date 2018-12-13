@@ -34,7 +34,7 @@
                 
                 
                 <tr>
-                    <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
+                    <th> <asp:Button ID="passBTN" runat="server" Text="Password                 >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" OnClick="passBTN_Click" /></th>
                     <td rowspan="2">
                         <asp:TextBox ID="nicknameTB" runat="server" Width="200px"></asp:TextBox>
                         <br />
@@ -42,7 +42,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th><asp:Button ID="deleteBTN" runat="server" Text="Delete Account         >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
+                    <th><asp:Button ID="deleteBTN" runat="server" Text="Delete Account         >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" OnClick="deleteBTN_Click" /></th>
                 </tr>
                 <tr>
                     <td rowspan="2">

@@ -31,7 +31,7 @@
             <br />
             <table>
                 <tr>
-                    <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /> </th>
+                    <th><asp:Button ID="mailChangeBTN" runat="server" Text="Email                       >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" OnClick="mailChangeBTN_Click" /> </th>
                     <th style="color:red; padding:10px">
                         <strong style="color: #003366">CHANGE PASSWORD</strong></th>
                 </tr>
@@ -49,7 +49,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th><asp:Button ID="deleteBTN" runat="server" Text="Delete Account         >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" /></th>
+                    <th><asp:Button ID="deleteBTN" runat="server" Text="Delete Account         >" font-family="sans-serif" Width="158px" Height="25px" BackColor="#a7a0a0ab" OnClick="deleteBTN_Click" /></th>
                 </tr>
                 <tr>
                     <td rowspan="2">
