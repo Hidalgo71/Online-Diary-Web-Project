@@ -33,17 +33,17 @@ namespace onlineDiary
             if (passTB.Text == passCheckTB.Text && agreementCB.Checked)
             {
                 cmd.ExecuteNonQuery();
-
+                Response.Redirect("writeDiary.aspx");
+                
+            }
+            else
+            {
                 nickTB.Text = string.Empty;
                 passTB.Text = string.Empty;
                 passCheckTB.Text = string.Empty;
                 usernameTB.Text = string.Empty;
                 surnameTB.Text = string.Empty;
                 mailTB.Text = string.Empty;
-            }
-            else
-            {
-                Response.Redirect("signUp.aspx");                
             }
 
         }
